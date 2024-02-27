@@ -31,7 +31,7 @@ function Gabriel({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>
-        Oi Pedro! Que tal um desafio divertido? Imagine que você está em uma fazenda ensolarada, cercado por galinhas animadas. Agora, você consegue imitar o som e os movimentos engraçados de uma galinha? Mostre sua criatividade e faça todo mundo rir!
+        Oi Pedro! Que tal um desafio divertido? imite o som e os movimentos engraçados de uma galinha
       </Text>
     </View>
   );
@@ -73,10 +73,10 @@ const Stack = createNativeStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Gustavo">
-        <Stack.Screen name="Ollyver" component={Gustavo} />
-        <Stack.Screen name="Pedro" component={Gabriel} />
-        <Stack.Screen name="Wesker" component={Victor} />
+      <Stack.Navigator initialRouteName="Ollyver">
+        <Stack.Screen name="Ollyver" component={Ollyver} />
+        <Stack.Screen name="Pedro" component={Pedro} />
+        <Stack.Screen name="Wesker" component={Wesker} />
       </Stack.Navigator>
     </NavigationContainer>
   );
